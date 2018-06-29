@@ -1,0 +1,39 @@
+{
+  "name": "nyt-react-app",
+  "version": "1.0.0",
+  "description": "An app that will pull articles from the NY Times API and display them on the page and will allow the user to save/delete articles to/from a Mongo database",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "build": "cd client && npm run build",
+    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Livingnight/nyt-react-app.git"
+  },
+  "author": "Jay Jernigan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Livingnight/nyt-react-app/issues"
+  },
+  "proxy": "http://localhost:8000",
+  "homepage": "https://github.com/Livingnight/nyt-react-app#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.1.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "concurrently": "^3.6.0",
+    "dotenv": "^6.0.0",
+    "nodemon": "^1.17.5"
+  }
+}
