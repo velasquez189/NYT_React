@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 .list-overflow-container li a{
-    color: darkslateblue;
+    color: rgb(25, 4, 160);
 }
 .list-overflow-container li:first-child{
     border-top: none;
