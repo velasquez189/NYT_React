@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Livingnight/nyt-react-app.git"
+    "url": "git+https://github.com/velasquez189/NYT_React.git"
   },
-  "author": "Jay Jernigan",
+  "author": "Andrea Velasquez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Livingnight/nyt-react-app/issues"
+    "url": "https://github.com/velasquez189/NYT_React.git"
   },
   "proxy": "http://localhost:8000",
-  "homepage": "https://github.com/Livingnight/nyt-react-app#readme",
+  "homepage": "https://github.com/velasquez189/NYT_React/blob/master/README.md",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
