@@ -10,7 +10,7 @@ const apiRouter = require('./routes/api/articles');
 const app = express();
 
 const PORT = process.env.PORT || 8000;
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytreact";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/NYT_React";
 Promise = mongoose.Promise;
 
 app.use(bodyParser.json());
